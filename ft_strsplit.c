@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strsplit.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vrebierr <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/03/17 20:54:02 by vrebierr          #+#    #+#             */
+/*   Updated: 2015/03/17 21:00:52 by vrebierr         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 #include "libft.h"
 
@@ -25,7 +37,6 @@ void	ft_init(int *i, int *x)
 	*x = 0;
 }
 
-
 char	**ft_strsplit(char const *s, char c)
 {
 	char	**res;
@@ -40,7 +51,7 @@ char	**ft_strsplit(char const *s, char c)
 		while (s[i] == c)
 			i++;
 		if (s[i] == 0)
-			break;
+			break ;
 		len = 0;
 		while (s[i + len] != c && s[i + len] != 0)
 			len++;

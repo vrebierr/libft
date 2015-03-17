@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memccpy.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vrebierr <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/03/17 20:46:58 by vrebierr          #+#    #+#             */
+/*   Updated: 2015/03/17 20:58:33 by vrebierr         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <string.h>
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
@@ -15,7 +27,7 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	{
 		tmp_dst[i] = tmp_src[i];
 		if (tmp_dst[i] == tmp_c)
-			return (&dst[i+1]);
+			return (&dst[i + 1]);
 		i++;
 	}
 	return (NULL);
