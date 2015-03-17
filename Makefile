@@ -70,11 +70,11 @@ $(NAME):
 	ar rcs $(NAME) $(OBJS)
 
 clean:
-	rm $(OBJS)
+	rm -rf $(OBJS)
 
 fclean:
-	rm $(NAME)
+	rm -rf $(NAME)
 
 re: fclean all
 
-.PHONY: clean fclean
+.PHONY: $(NAME) all re clean fclean
